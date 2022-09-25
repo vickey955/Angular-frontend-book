@@ -1,0 +1,11 @@
+<div>
+    <input [(ngModel)] ='user.name'> 
+    <input [(ngModel)] ='user.age'>
+    <button (click)='saveUser()'>Save</button>
+    <ol ngFor="users in user">
+        {{user.name}}
+    </ol>
+
+
+    <userlist></userlist>
+  </div>
